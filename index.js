@@ -51,7 +51,7 @@ function renderHomes() {
 
       rightCard.style.display = 'flex'
       rightCard.style.flexDirection = 'column'
-      rightCard.style.padding = '1em'
+      rightCard.style.padding = '3em'
     })
 
     textAreaSubmitButton.addEventListener('click', function () {
@@ -85,11 +85,9 @@ function renderHomes() {
     bottomCard.style.display = 'flex'
     bottomCard.style.flexDirection = 'row'
 
-    leftCard.style.border = '1px solid black'
     leftCard.style.textAlign = 'center'
     leftCard.style.flex = '1'
 
-    rightCard.style.border = '1px solid red'
     rightCard.style.textAlign = 'center'
     rightCard.style.flex = '1'
 

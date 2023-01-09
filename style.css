@@ -13,9 +13,28 @@ body {
   margin-top: 4em;
 }
 
+.homes-body {
+  display: flex;
+  justify-content: center;
+}
+
+.add-and-remove-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  /* background-color: rgb(230, 230, 249); */
+  border-radius: 1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  flex: 1;
+  max-width: 300px;
+  height: 950px;
+}
+
 main {
   margin-top: 4em;
-  margin-left: 15em;
+  margin-left: 3em;
   margin-right: 15em;
   color: rgb(100, 118, 239);
   font-family: Raleway;
@@ -23,6 +42,7 @@ main {
 
 img {
   max-width: 300px;
+  border-radius: 1em;
 }
 
 a {
@@ -49,27 +69,91 @@ a {
   text-transform: uppercase;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-home,
+.remove-home {
+  background-color: rgb(230, 230, 249);
+  margin-bottom: 1em;
+  /* background-color: red; */
+  border-radius: 1em;
+}
+
+.add-home-button,
+.remove-home-button {
+  all: unset;
+  color: #fff5fa;
+  background-color: rgb(100, 118, 239);
+  border-radius: 1em;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin: 1em;
+}
+
+.add-title,
+.remove-title {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(100, 118, 239);
+}
+
+.add-address-input,
+.add-type-input,
+.add-city-input,
+.add-state-input,
+.remove-home-input {
+  all: unset;
+  margin-right: 0.5em;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: #fff5fa;
+  color: rgb(100, 118, 239);
+
+  border-radius: 1em;
+}
+
+::placeholder {
+  color: rgb(166, 166, 166);
+  text-align: center;
+  padding-left: 15px;
+}
+
+.all-houses-container {
+  display: flex;
+  justify-content: center;
+}
+
 .house-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* justify-content: center; */
+
+  margin-right: 0;
+  /* align-items: center; */
   gap: 1.5em;
+  flex: 4;
 }
 
 .house-card {
-  width: 800px;
+  width: 700px;
   height: 300px;
   background-color: rgb(230, 230, 249);
   border-radius: 1em;
   padding: 10px;
-
-  gap: 1.5em;
 
   font-family: Raleway;
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
 }
+
+/* pages */
 
 .lorem-container {
   display: flex;
