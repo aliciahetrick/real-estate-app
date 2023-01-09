@@ -10,17 +10,24 @@ body {
   width: 100%;
   margin: 0;
   background-color: #fff5fa;
+  margin-top: 4em;
 }
 
 main {
-  margin-top: 8em;
+  margin-top: 4em;
   margin-left: 15em;
   margin-right: 15em;
   color: rgb(100, 118, 239);
   font-family: Raleway;
 }
+
 img {
   max-width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -46,7 +53,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .house-card {
@@ -59,4 +66,36 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1.5em;
+
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.lorem-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+  color: rgb(100, 118, 239);
+  background-color: rgb(230, 230, 249);
+  border-radius: 1em;
+  width: 800px;
+  height: 300px;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 8em;
+}
+
+.navigation-title {
+  padding-left: 2em;
+}
+.lorem-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
 }
