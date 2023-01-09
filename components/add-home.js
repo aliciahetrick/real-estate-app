@@ -22,7 +22,6 @@ function addHome() {
     city: cityInput.value,
     state: stateInput.value,
     type: typeInput.value,
-    comments: [],
   }
 
   //adds bookmark to data array

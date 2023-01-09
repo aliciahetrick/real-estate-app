@@ -25,10 +25,18 @@ function renderHomes() {
     console.log(homeType.textContent)
 
     const homeComments = document.createElement('p')
-    homeComments.textContent = house.comments
+    homeComments.textContent = `Comments: ${house.comments}`
     homeComments.classList.add('house-comments')
 
-    houseCard.append(homeImage, homeAddress, homeLocation, homeType)
+    const leftCard = document.createElement('section')
+    const middleCard = document.createElement('section')
+    const rightCard = document.createElement('section')
+
+    leftCard.append(homeAddress, homeLocation, homeType)
+    middleCard.append(homeImage)
+    rightCard.append(homeComments)
+
+    houseCard.append(leftCard, middleCard, rightCard)
 
     return houseCard
   })
