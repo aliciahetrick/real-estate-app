@@ -5,6 +5,8 @@ function createHomes() {
     let house = {
       address: data[i].address,
       image: data[i].image,
+      city: data[i].city,
+      state: data[i].state,
       type: data[i].type,
       comments: data[i].comments,
     }

@@ -5,6 +5,8 @@ addHomeButton.addEventListener('click', function () {
 
 function addHome() {
   const addressInput = document.querySelector('.add-address-input')
+  const cityInput = document.querySelector('.add-city-input')
+  const stateInput = document.querySelector('.add-state-input')
   const typeInput = document.querySelector('.add-type-input')
   const imageInput = document.querySelector('.add-image-file')
 
@@ -17,6 +19,8 @@ function addHome() {
   const newHomeObject = {
     address: addressInput.value,
     image: `images/${imageInput.files[0].name}`,
+    city: cityInput.value,
+    state: stateInput.value,
     type: typeInput.value,
     comments: [],
   }

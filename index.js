@@ -17,6 +17,10 @@ function renderHomes() {
     homeType.innerHTML = `Type: ${house.type}`
     homeType.classList.add('house-type')
 
+    const homeLocation = document.createElement('p')
+    homeLocation.textContent = `Location: ${house.city}, ${house.state}`
+    homeLocation.classList.add('house-city')
+
     console.log(house.type)
     console.log(homeType.textContent)
 
@@ -24,7 +28,7 @@ function renderHomes() {
     homeComments.textContent = house.comments
     homeComments.classList.add('house-comments')
 
-    houseCard.append(homeImage, homeAddress, homeType)
+    houseCard.append(homeImage, homeAddress, homeLocation, homeType)
 
     return houseCard
   })
