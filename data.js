@@ -14,7 +14,7 @@ const data = [
     type: 'Single-Family Home',
     city: 'Reston',
     state: 'Virginia',
-    comments: ['perfect for two'],
+    comments: [],
   },
   {
     address: '789 Mansion Way',
@@ -22,6 +22,6 @@ const data = [
     type: 'Mansion',
     city: 'Los Angeles',
     state: 'California',
-    comments: ['Out of my budget', 'gorgeous'],
+    comments: ['Out of my budget', ' gorgeous '],
   },
 ]

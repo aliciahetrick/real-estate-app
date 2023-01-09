@@ -22,7 +22,13 @@ function renderHomes() {
     homeLocation.classList.add('house-city')
 
     const homeComments = document.createElement('p')
-    homeComments.textContent = `Comments: ${house.comments}`
+    console.log(house.comments[0])
+    if (house.comments[0]) {
+      homeComments.textContent = `Comments: ${house.comments}`
+    } else {
+      homeComments.textContent = `Comments: none`
+    }
+
     homeComments.classList.add('house-comments')
 
     const addCommentButton = document.createElement('button')
