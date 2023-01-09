@@ -52,6 +52,15 @@ function renderHomes() {
       rightCard.style.display = 'flex'
       rightCard.style.flexDirection = 'column'
       rightCard.style.padding = '3em'
+
+      textAreaSubmitButton.style.all = 'unset'
+      textAreaSubmitButton.style.color = '#fff5fa'
+      textAreaSubmitButton.style.backgroundColor = 'rgb(100, 118, 239)'
+      textAreaSubmitButton.style.borderRadius = '1em'
+      textAreaSubmitButton.style.padding = '0.5em'
+      textAreaSubmitButton.style.paddingLeft = '3em'
+      textAreaSubmitButton.style.paddingRight = '3em'
+      textAreaSubmitButton.style.margin = '1em'
     })
 
     textAreaSubmitButton.addEventListener('click', function () {
@@ -76,6 +85,15 @@ function renderHomes() {
     rightCard.append(homeLocation, homeType, homeComments, addCommentButton)
 
     houseCard.append(topCard, bottomCard)
+
+    addCommentButton.style.all = 'unset'
+    addCommentButton.style.color = '#fff5fa'
+    addCommentButton.style.backgroundColor = 'rgb(100, 118, 239)'
+    addCommentButton.style.borderRadius = '1em'
+    addCommentButton.style.padding = '0.5em'
+    addCommentButton.style.paddingLeft = '3em'
+    addCommentButton.style.paddingRight = '3em'
+    addCommentButton.style.margin = '1em'
 
     houseCard.style.display = 'flex'
     houseCard.style.flexDirection = 'column'

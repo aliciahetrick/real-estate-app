@@ -82,6 +82,14 @@ a {
   border-radius: 1em;
 }
 
+.add-title {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(100, 118, 239);
+}
+
 .add-home-button,
 .remove-home-button {
   all: unset;
@@ -94,13 +102,12 @@ a {
   margin: 1em;
 }
 
-.add-title,
-.remove-title {
-  font-family: Raleway;
-  font-weight: 600;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: rgb(100, 118, 239);
+.add-image-file {
+  margin-left: 5em;
+  padding: 1em;
+  /* color: #fff5fa;
+  background-color: rgb(100, 118, 239);
+  border-radius: 1em; */
 }
 
 .add-address-input,
