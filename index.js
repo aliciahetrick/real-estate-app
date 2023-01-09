@@ -1,5 +1,3 @@
-console.log(arrOfHomes)
-
 function renderHomes() {
   const arrOfHousesCreateElements = arrOfHomes.map((house) => {
     const houseCard = document.createElement('section')
@@ -108,6 +106,9 @@ function renderHomes() {
     leftCard.style.flex = '1'
 
     rightCard.style.textAlign = 'center'
+    rightCard.style.display = 'flex'
+    rightCard.style.flexDirection = 'column'
+    rightCard.style.alignItems = 'center'
     rightCard.style.flex = '1'
 
     return houseCard
