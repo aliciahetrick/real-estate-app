@@ -1,3 +1,7 @@
+/**
+ * returns the home card elements and renders them to a list of home cards
+ */
+
 function renderHomes() {
   const arrOfHousesCreateElements = arrOfHomes.map((house) => {
     const houseCard = document.createElement('section')

@@ -10,8 +10,6 @@ function addHome() {
   const typeInput = document.querySelector('.add-type-input')
   const imageInput = document.querySelector('.add-image-file')
 
-  // imageInput.innerHTML = `<img src="${imageInput.value}" />`
-
   console.log(imageInput)
   console.log(imageInput.value)
   console.log(imageInput.files[0].name)

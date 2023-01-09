@@ -22,6 +22,6 @@ const data = [
     type: 'Mansion',
     city: 'Los Angeles',
     state: 'California',
-    comments: ['Out of my budget', ' gorgeous '],
+    comments: ['Out of budget', ' gorgeous '],
   },
 ]
