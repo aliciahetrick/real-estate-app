@@ -5,12 +5,12 @@ const data = [
     comments: [],
   },
   {
-    address: '123 Modern Lane',
+    address: '456 Modern Lane',
     image: 'images/house2.jpeg',
     comments: [],
   },
   {
-    address: '987 Mansion Way',
+    address: '789 Mansion Way',
     image: 'images/house3.jpeg',
     comments: [],
   },

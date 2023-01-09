@@ -17,7 +17,7 @@ function renderHomes() {
     homeComments.textContent = house.comments
     homeComments.classList.add('house-comments')
 
-    houseCard.append(homeAddress, homeImage)
+    houseCard.append(homeImage, homeAddress, removeHomeButton)
 
     return houseCard
   })
