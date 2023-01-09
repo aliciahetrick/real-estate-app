@@ -62,9 +62,7 @@ a {
   background-color: rgb(230, 230, 249);
   border-radius: 1em;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   gap: 1.5em;
 
   font-family: Raleway;
