@@ -10,15 +10,32 @@
   <body>
     <nav></nav>
     <section class="add-home">
-      <input type="text" class="address-input" name="address" placeholder="address" required />
-      <input type="file" class="image-file" name="image" accept="image/*" required />
+      <input
+        type="text"
+        class="add-address-input"
+        name="address"
+        placeholder="New Home Address"
+        required
+      />
+      <input type="file" class="add-image-file" name="image" accept="image/*" required />
       <button class="add-home-button">Add Home</button>
+    </section>
+    <section class="remove-home">
+      <input
+        type="text"
+        class="remove-home-input"
+        name="remove-home-input"
+        placeholder="Home to Remove"
+        required
+      />
+      <button class="remove-home-button">Remove Home</button>
     </section>
     <section class="all-houses-container">
       <main class="house-list"></main>
     </section>
     <script src="data.js"></script>
     <script src="components/add-home.js"></script>
+    <script src="components/remove-home.js"></script>
     <script src="components/create-houses.js"></script>
 
     <script src="index.js"></script>

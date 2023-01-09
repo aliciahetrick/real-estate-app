@@ -1,12 +1,11 @@
 const addHomeButton = document.querySelector('.add-home-button')
 addHomeButton.addEventListener('click', function () {
-  console.log('clicked')
   addHome()
 })
 
 function addHome() {
-  const addressInput = document.querySelector('.address-input')
-  const imageInput = document.querySelector('.image-file')
+  const addressInput = document.querySelector('.add-address-input')
+  const imageInput = document.querySelector('.add-image-file')
   // imageInput.innerHTML = `<img src="${imageInput.value}" />`
 
   console.log(imageInput)
