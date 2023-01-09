@@ -13,11 +13,18 @@ function renderHomes() {
     homeImage.src = `${house.image}`
     homeImage.classList.add('home-image')
 
+    const homeType = document.createElement('p')
+    homeType.innerHTML = `Type: ${house.type}`
+    homeType.classList.add('house-type')
+
+    console.log(house.type)
+    console.log(homeType.textContent)
+
     const homeComments = document.createElement('p')
     homeComments.textContent = house.comments
     homeComments.classList.add('house-comments')
 
-    houseCard.append(homeImage, homeAddress)
+    houseCard.append(homeImage, homeAddress, homeType)
 
     return houseCard
   })

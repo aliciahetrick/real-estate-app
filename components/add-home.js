@@ -5,7 +5,9 @@ addHomeButton.addEventListener('click', function () {
 
 function addHome() {
   const addressInput = document.querySelector('.add-address-input')
+  const typeInput = document.querySelector('.add-type-input')
   const imageInput = document.querySelector('.add-image-file')
+
   // imageInput.innerHTML = `<img src="${imageInput.value}" />`
 
   console.log(imageInput)
@@ -15,6 +17,7 @@ function addHome() {
   const newHomeObject = {
     address: addressInput.value,
     image: `images/${imageInput.files[0].name}`,
+    type: typeInput.value,
     comments: [],
   }
 

@@ -5,6 +5,7 @@ function createHomes() {
     let house = {
       address: data[i].address,
       image: data[i].image,
+      type: data[i].type,
       comments: data[i].comments,
     }
     arrOfHomes.push(house)

@@ -8,7 +8,9 @@ function removeHome() {
   const searchQuery = removeHomeInput.value.toLowerCase()
 
   arrOfHomes = arrOfHomes.filter(
-    (home) => !home.address.toLowerCase().includes(searchQuery)
+    (home) =>
+      !home.address.toLowerCase().includes(searchQuery) &&
+      !home.type.toLowerCase().includes(searchQuery)
     //  || home.comments[0].toLowerCase().includes(searchQuery)
   )
 
