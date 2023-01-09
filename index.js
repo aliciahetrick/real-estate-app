@@ -5,12 +5,19 @@ function renderHomes() {
     const houseCard = document.createElement('section')
     houseCard.classList.add('house-card')
 
-    const address = document.createElement('p')
-    address.textContent = house.address
+    const homeAddress = document.createElement('p')
+    homeAddress.textContent = house.address
+    homeAddress.classList.add('house-address')
 
-    // address.classList.add('house-address')
+    const homeImage = document.createElement('img')
+    homeImage.src = `${house.image}`
+    homeImage.classList.add('home-image')
 
-    houseCard.append(address)
+    const homeComments = document.createElement('p')
+    homeComments.textContent = house.comments
+    homeComments.classList.add('house-comments')
+
+    houseCard.append(homeAddress, homeImage)
 
     return houseCard
   })
