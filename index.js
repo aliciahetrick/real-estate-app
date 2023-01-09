@@ -29,6 +29,7 @@ function renderHomes() {
     addCommentButton.textContent = 'Add comment'
 
     const textArea = document.createElement('textarea')
+    textArea.setAttribute('maxlength', 280)
     const textAreaSubmitButton = document.createElement('button')
     textAreaSubmitButton.textContent = 'Add comment'
 
@@ -41,6 +42,10 @@ function renderHomes() {
       addCommentButton.remove()
 
       rightCard.append(textArea, textAreaSubmitButton)
+
+      rightCard.style.display = 'flex'
+      rightCard.style.flexDirection = 'column'
+      rightCard.style.padding = '1em'
     })
 
     textAreaSubmitButton.addEventListener('click', function () {
@@ -48,6 +53,9 @@ function renderHomes() {
       textArea.remove()
       textAreaSubmitButton.remove()
 
+      house.comments.push(` ${textArea.value}`)
+      console.log(house.comments)
+      renderHomes()
       rightCard.append(homeLocation, homeType, homeComments, addCommentButton)
     })
 
