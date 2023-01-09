@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-.add-and-remove-container {
+.left-nav {
   display: flex;
   flex-direction: column;
   text-align: center;
