@@ -22,8 +22,9 @@ function renderHomes() {
     homeLocation.classList.add('house-city')
 
     const homeComments = document.createElement('p')
-    console.log(house.comments[0])
-    if (house.comments[0]) {
+
+    // console.log(house.comments[0])
+    if (house.comments) {
       homeComments.textContent = `Comments: ${house.comments}`
     } else {
       homeComments.textContent = `Comments: none`
