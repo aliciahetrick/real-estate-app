@@ -1,5 +1,8 @@
 let arrOfHomes = []
 
+/**
+ * creates instances of every home using data.js
+ */
 function createHomes() {
   for (let i = 0; i < data.length; i++) {
     let house = {

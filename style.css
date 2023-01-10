@@ -13,25 +13,6 @@ body {
   margin-top: 4em;
 }
 
-.homes-body {
-  display: flex;
-  justify-content: center;
-}
-
-.left-nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1em;
-  /* background-color: rgb(230, 230, 249); */
-  border-radius: 1em;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  flex: 1;
-  max-width: 300px;
-  height: 950px;
-}
-
 main {
   margin-top: 4em;
   margin-left: 3em;
@@ -49,6 +30,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.homes-body {
+  display: flex;
+  justify-content: center;
+}
+
+/* navbar */
 
 .navbar {
   display: flex;
@@ -69,17 +57,27 @@ a {
   text-transform: uppercase;
 }
 
+/* main content section */
+
 .main-content {
   display: flex;
   flex-direction: row;
 }
 
-.add-home,
-.remove-home {
-  background-color: rgb(230, 230, 249);
-  margin-bottom: 1em;
-  /* background-color: red; */
+/* main content left nav */
+
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  /* background-color: rgb(230, 230, 249); */
   border-radius: 1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  flex: 1;
+  max-width: 300px;
+  height: 950px;
 }
 
 .add-title,
@@ -91,24 +89,12 @@ a {
   color: rgb(100, 118, 239);
 }
 
-.add-home-button,
-.remove-home-button {
-  all: unset;
-  color: #fff5fa;
-  background-color: rgb(100, 118, 239);
+.add-home,
+.remove-home {
+  background-color: rgb(230, 230, 249);
+  margin-bottom: 1em;
+  /* background-color: red; */
   border-radius: 1em;
-  padding: 0.5em;
-  padding-left: 3em;
-  padding-right: 3em;
-  margin: 1em;
-}
-
-.add-image-file {
-  margin-left: 2.5em;
-  padding: 1em;
-  /* color: #fff5fa;
-  background-color: rgb(100, 118, 239);
-  border-radius: 1em; */
 }
 
 .add-address-input,
@@ -130,6 +116,28 @@ a {
   color: rgb(166, 166, 166);
   text-align: center;
 }
+
+.add-image-file {
+  margin-left: 2.5em;
+  padding: 1em;
+  /* color: #fff5fa;
+  background-color: rgb(100, 118, 239);
+  border-radius: 1em; */
+}
+
+.add-home-button,
+.remove-home-button {
+  all: unset;
+  color: #fff5fa;
+  background-color: rgb(100, 118, 239);
+  border-radius: 1em;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin: 1em;
+}
+
+/* main content - house cards */
 
 .all-houses-container {
   display: flex;
