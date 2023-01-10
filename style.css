@@ -135,6 +135,11 @@ a {
   padding-left: 3em;
   padding-right: 3em;
   margin: 1em;
+
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 /* main content - house cards */
